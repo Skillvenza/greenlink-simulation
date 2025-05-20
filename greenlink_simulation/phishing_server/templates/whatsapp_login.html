@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delivery Verification</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f2f2f2; padding: 40px; }
+        .container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); max-width: 400px; margin: auto; }
+        h2 { color: #b7410e; }
+        input[type=email], input[type=submit] {
+            width: 100%; padding: 10px; margin: 10px 0;
+            border: 1px solid #ccc; border-radius: 5px;
+        }
+        input[type=submit] { background-color: #0A84FF; color: white; border: none; }
+        .note { font-size: 12px; color: gray; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Verify Delivery Email</h2>
+        <form action="/submit" method="POST">
+            <label for="email">Enter your email address:</label>
+            <input type="email" name="email" placeholder="you@example.com" required>
+            <input type="submit" value="Verify Now">
+        </form>
+        <div class="note">This is part of a cybersecurity simulation by SkillvenzA.</div>
+    </div>
+</body>
+</html>

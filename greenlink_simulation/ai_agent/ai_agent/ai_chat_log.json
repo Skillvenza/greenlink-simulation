@@ -1,0 +1,27 @@
+[
+    {
+        "timestamp": "2025-05-20T06:46:20.390571",
+        "role": "attacker",
+        "message": "Hello, this is Sara from HR. We\u2019re updating records for bonus allocation. How can I help you today?"
+    },
+    {
+        "timestamp": "2025-05-20T06:46:24.087216",
+        "role": "user",
+        "message": "hi"
+    },
+    {
+        "timestamp": "2025-05-20T06:46:24.087216",
+        "role": "attacker",
+        "message": "No problem! For payroll updates, please log in using the HR gateway here: http://127.0.0.1:5000"
+    },
+    {
+        "timestamp": "2025-05-20T06:46:39.103581",
+        "role": "user",
+        "message": "ok"
+    },
+    {
+        "timestamp": "2025-05-20T06:46:39.104580",
+        "role": "attacker",
+        "message": "No problem! For payroll updates, please log in using the HR gateway here: http://127.0.0.1:5000"
+    }
+]

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreenLink Cybersecurity Simulation | SkillvenzA</title>
+  <style>
+    :root {
+      --primary: #b7410e;
+      --secondary: #0A3161;
+      --accent: #0A84FF;
+      --light: #f4f7f9;
+      --text: #1a1a1a;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to right, var(--light), white);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      text-align: center;
+      padding: 60px 20px 40px;
+      color: white;
+      position: relative;
+    }
+    header img {
+      height: 70px;
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin: 10px 0;
+      animation: fadeInDown 1.5s ease-out;
+    }
+    .tagline {
+      font-size: 1.2rem;
+      color: #f0f0f0;
+      margin-bottom: 20px;
+      animation: fadeInUp 2s ease-out;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: var(--accent);
+      color: white;
+      padding: 12px 24px;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      animation: fadeInUp 2.5s ease-out;
+      margin-top: 10px;
+    }
+    .cta-button:hover {
+      background-color: var(--primary);
+    }
+    .countdown {
+      font-size: 1.4rem;
+      margin-top: 20px;
+      color: #ffffff;
+      animation: fadeInUp 3s ease-out;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    main {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: var(--primary);
+      margin-top: 40px;
+      border-left: 5px solid var(--primary);
+      padding-left: 10px;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1.05rem;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+    footer {
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://skillvenza.com/wp-content/uploads/2025/05/cropped-Logo-4-300x240.png" alt="SkillvenzA Logo">
+    <h1>GreenLink Cybersecurity Simulation</h1>
+    <div class="tagline">Real-World Phishing & Threat Simulations for Corporates</div>
+    <a class="cta-button" href="https://www.skillvenza.com" target="_blank">Visit SkillvenzA</a>
+    <div class="countdown" id="countdown">Launching in: -- days --:--:--</div>
+  </header>
+
+  <main>
+    <h2>Why GreenLink?</h2>
+    <p>
+      <strong>GreenLink</strong> is a next-generation cybersecurity simulation platform developed by <strong>SkillvenzA</strong> to help enterprises and their employees prepare for, detect, and respond to modern social engineering and phishing threats.
+    </p>
+    <p>
+      Designed exclusively for corporate security training programs, GreenLink creates real-world attack scenarios using AI-powered phishing agents, steganographic payloads, and red-blue team exercises that mirror the threat landscape of today.
+    </p>
+
+    <h2>Key Capabilities</h2>
+    <ul>
+      <li>🧠 AI-powered phishing bot conversations (WhatsApp-style deception)</li>
+      <li>🎣 Steganographic image payloads for red team simulations</li>
+      <li>🛡️ Web-based incident reporting forms for blue team response</li>
+      <li>📊 Live dashboards for report tracking, CSV & PDF exports</li>
+      <li>⚙️ Fully modular for internal security drills and compliance readiness</li>
+    </ul>
+
+    <h2>Who It's For</h2>
+    <p>
+      GreenLink is trusted by CISOs, security awareness teams, and training coordinators across industries including finance, healthcare, government contracting, logistics, and IT.
+    </p>
+
+    <h2>Deployment Options</h2>
+    <ul>
+      <li>📦 On-premise installation for maximum control</li>
+      <li>🌐 Private cloud deployments (self-hosted via Docker)</li>
+      <li>📈 Integration-ready for LMS & HR compliance portals</li>
+    </ul>
+
+    <h2>Currently Under Development</h2>
+    <p>
+      GreenLink is being crafted with cutting-edge technologies and threat emulation strategies. Follow SkillvenzA to stay informed about release timelines, demos, and corporate rollout programs.
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2025 SkillvenzA. All rights reserved. GreenLink is a proprietary training product. Not licensed for public distribution.
+  </footer>
+
+  <script>
+    // Countdown to a launch date (e.g. Dec 1, 2025)
+    const launchDate = new Date("2025-12-01T00:00:00").getTime();
+    const countdown = document.getElementById("countdown");
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = launchDate - now;
+
+      if (distance <= 0) {
+        countdown.innerHTML = "Launched!";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdown.innerHTML = `Launching in: ${days} days ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    }
+
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
